@@ -83,3 +83,10 @@ The four access modifiers are private, default, protected, public.
 | double | 64 | -2<sup>63</sup> to -2<sup>63</sup> -1 | 0.0d | 
 | char | 16 | 0 to -2<sup>16</sup> -1 | \u0000 |
 | boolean | 1 | true or false | false | 
+
+
+## Links
+
+
+- [Javatpoint](https://www.javatpoint.com/java-tutorial).
+- [W3School](https://www.w3schools.com/java/java_intro.asp).
