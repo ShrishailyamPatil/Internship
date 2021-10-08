@@ -95,6 +95,134 @@ The four access modifiers are private, default, protected, public.
 | char | 16 | 0 to -2<sup>16</sup> -1 | \u0000 |
 | boolean | 1 | true or false | false | 
 
+## Control Statement 
+- **If-Else statement **
+
+
+  ```java
+  public class vote{
+  
+  public static void main (String args[]){
+      int  x= 23;
+      if (x >= 18 ){
+         System.out.println("You are eligible for Vote")
+      }
+      else{
+         System.out.println("Not Eligible for Vote")
+      }
+  }
+  }
+  ```
+  
+  In Same way we can make if-else statement in another if-else statement and that is called nested if- else.Also can use if-else-if ladder loop.
+  
+- **Switch Statement**
+
+
+      The Java switch statement executes one statement from multiple conditions.
+      
+    ``` java
+    public class SwitchExample {  
+    public static void main(String[] args) {    
+    int number=20;  
+    //Switch expression  
+    switch(number){  
+    //Case statements  
+    case 10: System.out.println("10");  
+    break;  
+    case 20: System.out.println("20");  
+    break;  
+    case 30: System.out.println("30");  
+    break;  
+    //Default case statement  
+    default:System.out.println("Not in 10, 20 or 30");  
+    }  
+    }  
+    } 
+    ```
+
+- **For loops**
+
+   The Java for loop is used to iterate a part of the program given fix number of  times.
+   ``` java
+      public class NestedForExample {  
+   public static void main(String[] args) {  
+
+   for(int i=1;i<=3;i++){  
+
+      for(int j=1;j<=3;j++){  
+              System.out.println(i+" "+j);  
+      }  
+   } 
+   }  
+   }  
+   ```
+
+- **While and Do While loops**
+
+
+   The Java while loop and do while is used to iterate a part of the program
+   repeatedly until the specified Boolean condition is true.
+
+   ``` java
+   // While loop
+
+   public class WhileExample {  
+   public static void main(String[] args) {  
+       int i=1;  
+       while(i<=10){  
+           System.out.println(i);  
+       i++;  
+       }  
+   }  
+   } 
+
+   // Do While
+
+   public class DoWhileExample {    
+   public static void main(String[] args) {    
+       int i=1;    
+       do{    
+           System.out.println(i);    
+       i++;    
+       }while(i<=10);    
+   }    
+   }  
+   ```
+
+- **Break ,Continue**
+
+   When a break statement is encountered inside a loop, the loop is immediately terminated and the program control resumes at the next statement following the loop.
+
+   ``` java
+
+   public class BreakExample {  
+   public static void main(String[] args) {  
+       for(int i=1;i<=10;i++){  
+           if(i==5){  
+               //breaking the loop  
+               break;  
+           }  
+           System.out.println(i);  
+       }  
+   }  
+   } 
+   ```
+      The continue statement is used in loop control structure when you need to jump to the next iteration of the loop immediately.
+      
+   ``` java
+   public class ContinueExample {  
+   public static void main(String[] args) {    
+       for(int i=1;i<=10;i++){  
+           if(i==5){  
+               //using continue statement  
+               continue;//it will skip the rest statement  
+           }  
+           System.out.println(i);  
+       }  
+   }  
+   } 
+   ```
 
 ## Links
 
