@@ -24,35 +24,46 @@ Internet environments.
 | **Architecture neutral** | **Interpreted** | **High Performance** | **Multithreaded** | 
 
 ## JDK, JRE, JVM 
-  - JDK :  Java Development Kit
-  - JRE : Java Runtime Enviroment
-  - JVM : Java Virtual Machine
+  - **JDK** :  Java Development Kit
+  - **JRE** : Java Runtime Enviroment
+  - **JVM** : Java Virtual Machine
   
   
   ![](https://static.javatpoint.com/images/jdk2.png)
   
 ## Lifecycle of java program
-- Edit 
+- **Edit**
     - Programmers write the code.
-- Complie
+- **Complie**
     - Compiler creates byte code(.class) from java program.
-- Load 
+- **Load** 
     - Class loader stores byte code in memory and loads necessary data .
-- Execute 
+- **Execute** 
     - Interpreter translates byte code into machine language 
+## Basic program
+
+**Main.java**
+
+```java
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}  
+```
 
 ## OOPS Concept
 
-- Encapsulation 
-    -Encapsulation in Java is a process of wrapping code and data together into a single unit, to achive data hiding
-- Abstraction
+- **Encapsulation** 
+    - Encapsulation in Java is a process of wrapping code and data together into a single unit, to achive data hiding
+- **Abstraction**
    - Abstraction is a process of hiding the implementation details and showing only functionality to the user.
-- Polymorphism
+- **Polymorphism**
    -  Complie time polymorphism (Over Loading)
         - Happens in same class
    -  Runtime Dispatch (Overrinding)
         -  Happens in parent class and subclass.
-- Inheritance
+- **Inheritance**
    - Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object.
 
 
