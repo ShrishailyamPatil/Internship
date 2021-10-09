@@ -56,7 +56,7 @@ exception occurred, and terminates the program or find the catch bolck in progra
    - After it goes through finally flows and run it.
 
   ## Examples 
-  - Multiple Catch Block:
+  - **Multiple Catch Block:**
 
   ``` java
   class TryCatch {
@@ -80,7 +80,7 @@ exception occurred, and terminates the program or find the catch bolck in progra
   }
   ```
   
-  - Nested try Statement 
+  - **Nested try Statement** 
   ``` java
   class TryCatch {
     public static void main(String args[]) {
@@ -106,7 +106,7 @@ exception occurred, and terminates the program or find the catch bolck in progra
     }
     }
   ```
-  - Throw 
+  - **Throw** 
   ``` java
   class TryCatch {
     static void demoproc() {
@@ -132,7 +132,7 @@ exception occurred, and terminates the program or find the catch bolck in progra
 
   ```
       
-  - Throws 
+  - **Throws** 
   ``` java
    class TryCatch {
       static void throwOne() throws IllegalAccessException{
