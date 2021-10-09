@@ -192,5 +192,100 @@ exception occurred, and terminates the program or find the catch bolck in progra
   //Exception occured: InvalidAgeException: not valid
   //rest of the code..
  ```
+# Static, Final and Enum Keywords
 
+  ## Static 
+  - The static variable can be used to refer the
+common property of all objects (that is not unique
+for each object)
+  - The static variable gets memory only once in class
+area at the time of class loading.
+  - We can apply static keyword with variables, methods, blocks and nested classes.
   
+  Example
+  ``` java
+  class Student{  
+     int rollno;  
+     String name;  
+     static String college = "ITS";
+     
+     //static method to change the value of static variable  
+     static void change(){  
+        college = "BBDIT";  
+     }  
+     //constructor to initialize the variable  
+     Student(int r, String n){  
+         rollno = r;  
+         name = n;  
+     }  
+       
+     void display(){
+        System.out.println(rollno+" "+name+" "+college);}  
+    }  
+    //Test class to create and display the values of object  
+    public class TestStaticMethod{  
+        public static void main(String args[]){  
+          Student.change();            
+          Student s1 = new Student(111,"Karan");  
+          Student s2 = new Student(222,"Aryan");  
+          Student s3 = new Student(333,"Sonoo");  
+           
+          s1.display();  
+          s2.display();  
+          s3.display();  
+        }  
+    }  
+  //OUTPUT
+  /*   111 Karan BBDIT
+       222 Aryan BBDIT
+       333 Sonoo BBDIT*/
+  ```
+  
+  ## Final
+  - The final keyword in java is used to restrict the user.
+  - Final keyword can be used as
+      - variable: makes variable constant
+      -  method: cannot override the method
+      -  class: cannot extend the class
+  
+  Example
+  ``` java
+  class Bike{  
+    final void run(){System.out.println("running");}  
+  }  
+
+  class Honda extends Bike{  
+     void run(){
+      System.out.println("running safely with 100kmph");
+      }  
+
+     public static void main(String args[]){  
+       Honda honda= new Honda();  
+       honda.run();  
+     }  
+  }  
+  // OUTPUT: Compile Time Error
+  ```
+  
+  ## Enum
+  - The Enum in Java is a data type which contains a fixed set of constants
+  - Are static and final implicitly.
+  - Java Enums can be thought of as classes which have a fixed set of constants
+  
+  Example
+  ``` java
+  class EnumExample1{  
+    //defining the enum inside the class  
+    public enum Season { WINTER, SPRING, SUMMER, FALL }  
+     
+    public static void main(String[] args) {  
+      //traversing the enum  
+      for (Season s : Season.values())  
+      System.out.println(s);  
+  }} 
+  /* OUTPUT:
+    WINTER
+    SPRING
+    SUMMER
+    FALL*/
+  ```
