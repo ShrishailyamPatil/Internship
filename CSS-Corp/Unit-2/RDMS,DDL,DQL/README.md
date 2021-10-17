@@ -5,7 +5,11 @@
 
 ### Keys:
 It is important that any entity in an entity set be uniquely identifiable.  Practically, we use the values of certain attributes to uniquely identify an entity.  For example, when the clerk at a bank keys in a customer’s SSN, the customer’s full information can be brought up.  Also, if she keys in both SSN and the customer’s name, the same customer’s information will be brought up. 
-
+#### Employee Table
+| EmpID | EmpName | EmpAge | SSN | Passport_Number | License_Number |
+| ------ | ------ |------ | ---- | ---- | ----- |
+|1234 | Lay | 34 | 1645 | 7345 | 74721 |
+|1235 | Ray | 32 | 464 | 9765 | 64647 |
 #### Superkey
 - Super key is a set of an attribute which can uniquely identify a tuple. Super key is a superset of a candidate key.
 - ##### For example: 
@@ -56,6 +60,16 @@ EmpID -> EmpName
 -	*Multivalued Dependency*
     - When existence of one or more rows in a table implies one or more other rows in the same table, then the Multi-valued dependencies occur.
     - If a table has attributes P, Q and R, then Q and R are multi-valued facts of P.
+### Normalization:
+
+| Normal Form | Requirement |
+| ------ | ------ |
+| 1NF |  Contains an atomic value |
+| 2NF |  Should be in 1NF and all non-key attributes are fully functional dependent on the primary key |
+| 3NF |  Should be in 2NF and no transition dependency exists |
+| 4NF |  Should be in Boyce Codd normal form and has no multi-valued dependency|
+| 5NF |  Should be 4NF and should not contain any join dependency and joining should be lossless |
+
 
 ### DDL (Data Definition Language): 
 DDL consists of the SQL commands that can be used to define the database schema. It deals with descriptions of the database schema and is used to create and modify the structure of database objects in the database.
