@@ -1,7 +1,3 @@
-/*Title:
- Implement the following concepts by constructing suitable classes in JAVA-
- a.Constructors b.Constructor Overloading c.Function Overloading d.Function Overriding e.Inheritance
- */
 
 
 
